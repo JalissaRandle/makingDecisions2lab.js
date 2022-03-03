@@ -6,7 +6,7 @@ var arr = [10,20,30,40,50,60]
   Create a variable named 'firstItem' and set it equal to the first value of the 'arr' array.
 */
 let firstItem = arr[0]
-console.log(firstItem)
+// console.log(firstItem)
 //Code Here
 
 
@@ -14,8 +14,11 @@ console.log(firstItem)
 /*
   Remove the last item from the 'arr' array and store it in a variable named 'lastItemRemoved'. Console.log the array to verify you no longer have the last item.
 */
-
+ 
 //Code Here
+
+let lastItemRemoved = arr.pop()
+// console.log(lastItemRemoved)
 
 ////////// PROBLEM 3 //////////
 
@@ -28,6 +31,11 @@ var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
 */
 
 //Code Here
+for (let i = 0; i < family.length; i++){
+  // console.log(family[i])
+}
+
+
 
 
 
@@ -43,8 +51,16 @@ let evensArr = []
 */
 
 //Code Here
+for (let i = 0; i < nums.length; i++){ //1
+  if(nums[i] % 2 === 0){ //2
+    evensArr.push(nums[i]) //3
+    } 
+}
+// console.log(evensArr)
 
-
+// you want the equation to go through all of the number of the array for it to decide if it is divisable by 2 
+// 2) when your're stating what to divide by, you want it to be nums[i] so that it will go down the range of nums and be able to do the math.
+// 3)then you want to push the even number from the equation from nums to evensArr 
 
 ////////// PROBLEM 5 //////////
 
@@ -57,6 +73,19 @@ var score = 74
 */
 
 //Code Here
+// if (score >= 90){
+//   console.log('A')
+// }else if (score >= 80 && score <= 89){
+//   console.log('B')
+// }else if (score >= 70 && score <= 79){
+//   console.log('c')
+// }else if (score >= 60 && score <= 69){
+//   console.log('D')
+// } else {
+//   console.log('f')
+// }
+
+// console.log(score)
 
 
 ////////// Intermediate Problems //////////
@@ -70,7 +99,9 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 /*
   Create a variable named 'someNum' and set it equal to the fifth value of the 'myFavoriteNumbers' array.
 */
+let someNum = myFavoriteNumbers.pop()
 
+// console.log(someNum)
 //Code Here
 
 
@@ -80,7 +111,13 @@ var myFavoriteNumbers = [4,8,12,16,20,24];
 // Use an if statement to check the length of the 'myFavoriteNumbers' array. If it's less than 7, log 'There are not enough elements in this array' to the console. If the length is more than 7, reassign the value of 'someNum' to the value of the 7th element in the array. (Hint: how can you make sure that your code works for exactly 7 elements? What index do you use to get the 7th element?)
 
 //Code Here
-
+//  console.log(myFavoriteNumbers.length)
+//  if (myFavoriteNumbers.length < 7){
+//    console.log('there are not enough elements in this array to the console')
+//  } else if (myFavoriteNumbers.length >= 7){
+//    console.log(myFavoriteNumbers.push(someNum))
+//  }
+// console.log(myFavoriteNumbers.length)
 
 ////////// PROBLEM 8 //////////
 
@@ -91,8 +128,11 @@ var listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
 // Use a for-loop to iterate through 'listOfNumbers', checking to see if each number is divisible by 3. If it is, console.log '{number} is divisible by 3.'
 
 //Code Here
-
-
+// for (let i = 0; i < listOfNumbers.length; i++){
+//   if(listOfNumbers[i] % 3 === 0){
+//     console.log(`${listOfNumbers[i]} is divisable by 3`)
+//   }
+// }
 ////////// PROBLEM 9 //////////
 // Do not edit the code below.
 var letters = ['A', 'B', 'C', 'D', 'E'];
@@ -101,7 +141,11 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 /*
   Loop backwards, starting at the end of the 'letters' array. Console log every item in the array.
 */
-
+// for (let i = 4; i >= 0; i--){
+//   console.log(letters[i])
+// }
+// - you make i = 4, and i>=0 because it can  read teh code backwards, so, the youll have to flip the way that you word the for let loop
+// or we could try i = letters.length -1 to get the last letter/number  of the array that you want. 
 //Code Here
 
 
@@ -125,6 +169,17 @@ If the letter grade is not one of the above letters, console.log 'Not an eligibl
 */
 
 //Code Here
+
+switch(letterGrade){
+  case 'A':
+    console.log("The student is doing excellently.")
+    break;
+    case 'b':
+      console.log('the student is doing well')
+      break;
+}
+
+ console.log(letterGrade)
 
 
 
@@ -152,4 +207,15 @@ If the letter grade is not one of the above letters, console.log 'Not an eligibl
   ...
 */
 
-//Code Here
+// Code Here
+// for (let i = 1; i <= 100; i++){
+//   if (i % 15 === 0){ 
+//    console.log('Devmountain')
+//  } else if (i % 3 === 0){ 
+//    console.log('Dev')
+//  } else if (i % 3 === 0){
+//    console.log('Mountain')
+//  } else {
+//    console.log(i)
+//  }
+// } 
